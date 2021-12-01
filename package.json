@@ -1,0 +1,30 @@
+{
+  "name": "fullstack_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zach-OfAllTrades/fullstack_portfolio.git"
+  },
+  "author": "Zachary Rose",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zach-OfAllTrades/fullstack_portfolio/issues"
+  },
+  "homepage": "https://github.com/Zach-OfAllTrades/fullstack_portfolio#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongodb": "^4.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
