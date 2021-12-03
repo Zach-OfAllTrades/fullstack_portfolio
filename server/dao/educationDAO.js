@@ -6,7 +6,7 @@ export default class EducationDAO {
       return
     }
     try {
-      education = await conn.db(process.env.PORTFOLIO_NS).collection("portfolio")
+      education = await conn.db(process.env.PORTFOLIO_NS).collection("education")
     } catch (e) {
       console.error(
         `Unable to establish a collection handle in educationDAO: ${e}`,

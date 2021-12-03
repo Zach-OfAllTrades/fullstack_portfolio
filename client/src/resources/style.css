@@ -1,0 +1,26 @@
+/**************************
+UNIVERSAL
+***************************/
+:root {
+    --primary-color: #ecf0f3;
+    --secondary-color: #F3F6F8;
+  }
+  
+  *{
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: 'Libre Baskerville', serif;
+    background-color: var(--secondary-color);
+  }

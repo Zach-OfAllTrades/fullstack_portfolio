@@ -6,7 +6,7 @@ export default class ExperienceDAO {
       return
     }
     try {
-      experience = await conn.db(process.env.PORTFOLIO_NS).collection("portfolio")
+      experience = await conn.db(process.env.PORTFOLIO_NS).collection("experience")
     } catch (e) {
       console.error(
         `Unable to establish a collection handle in experienceDAO: ${e}`,
@@ -30,7 +30,6 @@ export default class ExperienceDAO {
 
     try {
       const experienceList = await displayCursor.toArray()
-      const totalExperience = await experience.countDocuments(query)
 
       return { experienceList }
     } catch (e) {

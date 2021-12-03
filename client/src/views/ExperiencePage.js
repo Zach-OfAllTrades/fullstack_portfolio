@@ -38,21 +38,22 @@ const Experience = () => {
     };  
 
     return(
-        <div>
+        <div className="album py-5">
+            <h1>EXPERIENCE</h1>
             {!experience ? "loading..." : experience.map((exp) => { 
                 return(
-                    <div>
-                    
-                        <ExperienceItem experience={exp} />
-                        <ExperienceDetail experience={exp} />
+                    <div className="row">
+                        <ExperienceItem key={exp._id} experience={exp} />
+                        <ExperienceDetail key={exp._id} experience={exp} />
                     </div>
                 )
             })}
+            <h1>EDUCATION</h1>
             {!education? "...loading" : education.map((edu) => {
                 return(
-                    <div>
-                        <EducationItem education={edu}/>
-                        <EducationDetail education={edu}/> 
+                    <div className="row">
+                        <EducationItem key={edu._id} education={edu}/>
+                        <EducationDetail key={edu._id} education={edu}/> 
                     </div>
                 )
             })} 
