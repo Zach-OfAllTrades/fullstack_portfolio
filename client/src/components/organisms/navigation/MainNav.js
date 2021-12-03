@@ -8,12 +8,7 @@ const MainNav = () => {
     ]
 
     return(
-        <HorizontalNavBar classes="navbar-dark bg-dark" navItems={
-            [
-                {path: "/", text: "Home"},
-                {path: "/experience", text: "Experience"}
-            ]
-        } />
+        <HorizontalNavBar classes="navbar-dark bg-dark" navItems={navItems} />
     )
 }
 
