@@ -1,5 +1,4 @@
 import React from "react";
-import LabeledList from "../../molecules/LabeledList";
 import ListCard from "../../molecules/ListCard";
 
 const ExperienceDetail = (props) => {
@@ -8,7 +7,7 @@ const ExperienceDetail = (props) => {
 
     return(
         <div className="col-lg-8 pb-1">
-            {props.education.classes.length == 0 || !props.education.classes ? <div></div> : 
+            {props.education.classes.length === 0 || !props.education.classes ? <div></div> : 
                 <ListCard key={props.key} lists={[
                     {
                         label: label,

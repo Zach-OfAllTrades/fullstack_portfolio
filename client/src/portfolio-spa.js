@@ -3,10 +3,10 @@ import {
     Route,
     Switch
   } from "react-router-dom";
-import NavItem from "./components/atoms/NavListItem.js";
 import MainNav from "./components/organisms/navigation/MainNav.js";
 import Experience from "./views/ExperiencePage.js";  
 import Home from "./views/HomePage.js"; 
+import SkillsPage from "./views/SkillsPage.js";
 
 const PortfolioSPA = () => {
     return(
@@ -17,6 +17,9 @@ const PortfolioSPA = () => {
               <Route exact path={"/"} component={Home} />
               <Route path="/experience">
                 <Experience />
+              </Route>
+              <Route path="/skills">
+                <SkillsPage />
               </Route>
             </Switch>
             </div>

@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
-import ExperienceService from "../services/experience.service";
-import EducationService from "../services/education.service";
+import React from "react";
 import ExperienceList from "../components/organisms/experience/ExperienceList";
 import EducationList from "../components/organisms/education/EducationList";
 import ExperienceSubNav from "../components/organisms/navigation/ExperienceSubNav";

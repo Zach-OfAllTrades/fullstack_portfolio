@@ -1,4 +1,4 @@
-import { ReactDOM, react } from "react";
+import React from "react";
 
 const Home = () => {
   return(

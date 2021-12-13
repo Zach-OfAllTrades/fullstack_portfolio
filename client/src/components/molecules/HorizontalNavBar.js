@@ -1,14 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import NavListItem from "../atoms/NavListItem";
 
 const HorizontalNavBar = (props) => {
   
     const navClasses = `navbar navbar-expand ${props.navClasses}`
     const listClasses = `${props.listClasses}`
-    
-    useEffect(() => {
-      console.log(props.navItems);
-    })
 
     return(
       <nav className={navClasses}>
