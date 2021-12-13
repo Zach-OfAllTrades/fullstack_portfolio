@@ -24,3 +24,19 @@ UNIVERSAL
     font-family: 'Libre Baskerville', serif;
     background-color: var(--secondary-color);
   }
+
+  .page {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .nav-item-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sub-nav {
+    justify-content: center;
+  }

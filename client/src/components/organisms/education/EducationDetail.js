@@ -4,13 +4,14 @@ import ListCard from "../../molecules/ListCard";
 
 const ExperienceDetail = (props) => {
 
+    const label = ["3.71 GPA - Magna Cum Laude", <br/>, <br/>, "Relevant Coursework"];
+
     return(
         <div className="col-lg-8 pb-1">
             {props.education.classes.length == 0 || !props.education.classes ? <div></div> : 
-                // <LabeledList label="Relevant Coursework" items={props.education.classes}/>
                 <ListCard key={props.key} lists={[
                     {
-                        label: "Relevant Coursework",
+                        label: label,
                         items: props.education.classes
                     }
                 ]}/>

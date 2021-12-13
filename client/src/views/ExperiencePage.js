@@ -13,14 +13,16 @@ const Experience = () => {
     return(
         <div>
             <ExperienceSubNav />
-            <Switch> 
-              <Route exact path={"/experience"}>
-                  <ExperienceList />
-              </Route>
-              <Route path="/experience/education">
-                <EducationList />
-              </Route>
-            </Switch>
+            <div className="page">
+              <Switch> 
+                <Route exact path={"/experience"}>
+                    <ExperienceList />
+                </Route>
+                <Route path="/experience/education">
+                  <EducationList />
+                </Route>
+              </Switch>
+            </div>
         </div>
     )
 }

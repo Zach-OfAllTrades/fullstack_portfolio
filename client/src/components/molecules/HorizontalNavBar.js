@@ -3,15 +3,16 @@ import NavListItem from "../atoms/NavListItem";
 
 const HorizontalNavBar = (props) => {
   
-    const classes = `navbar navbar-expand ${props.classes}`
+    const navClasses = `navbar navbar-expand ${props.navClasses}`
+    const listClasses = `${props.listClasses}`
     
     useEffect(() => {
       console.log(props.navItems);
     })
 
     return(
-      <nav className={classes}>
-        <div>
+      <nav className={navClasses}>
+        <div className={listClasses}>
           <ul className="navbar-nav mr-auto">
               {!props.navItems ? "loading..." : props.navItems.map(navItem => {
                 return(

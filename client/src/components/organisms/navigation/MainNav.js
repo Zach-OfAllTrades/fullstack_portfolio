@@ -8,7 +8,10 @@ const MainNav = () => {
     ]
 
     return(
-        <HorizontalNavBar classes="navbar-dark bg-dark" navItems={navItems} />
+        <HorizontalNavBar 
+            navClasses="navbar-dark bg-dark nav-item-container" 
+            navItems={navItems} 
+        />
     )
 }
 
